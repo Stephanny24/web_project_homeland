@@ -128,7 +128,7 @@
 .places {
   max-width: 77%;
   margin: auto;
-  padding-bottom: 92px;
+  /* padding-bottom: 92px; */
 }
 
 .place {
@@ -194,6 +194,8 @@
 
 .place__image {
   width: 100%;
+  height: 460px;
+
   /* max-width: 460px; */
   /* object-fit: cover; */
 }
@@ -524,6 +526,7 @@
   height: 740px;
   max-width: 1184px;
   width: 100%;
+  margin: auto;
 }
 
 .cover__overlay {
@@ -544,7 +547,7 @@
   height: 100%;
 }
 
-.cover__information {
+.cover__info {
   position: relative;
   z-index: 2;
   display: flex;
@@ -604,3 +607,13 @@
 /* .cover__about-tickets:active {
   background-color: #238aff;
 } */
+
+.footer__copy-right {
+  /* font-family: Inter, Arial, sans-serif; */
+  margin: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  margin: 92px 0 20px 0;
+}
