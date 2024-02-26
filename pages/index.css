@@ -1,0 +1,606 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgba(42, 44, 47, 1);
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.header {
+  padding: 76px 0px 124px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* @media screen and (max-width: 767px) {
+  .header__logo {
+    height: 51.85px;
+    width: 200px;
+  }
+} */
+
+.lead {
+  display: grid;
+  padding: 0px 0px 0px 66px;
+}
+
+.lead__title {
+  max-width: 61.95%;
+  justify-self: center;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  font-size: 96px;
+  margin: 85px 0 32px 0;
+  width: 100%;
+}
+
+.lead__subtitle {
+  max-width: 73.17%;
+  max-height: 7.32%;
+  justify-self: center;
+  margin: 0 0 64px 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+}
+
+.lead__image {
+  width: 100%;
+  max-width: 95%;
+  filter: grayscale(90%);
+}
+
+.intro {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro__title {
+  max-width: 79.45%;
+  /* width: 100%; */
+  font-size: 53px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 115px 40px 0px;
+  padding-left: 148px;
+  align-self: flex-start;
+}
+
+.intro__text {
+  margin: 0 0 10px 148px;
+  position: relative;
+  max-width: 56.25%;
+  align-self: flex-start;
+}
+
+.intro__text-quote {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.intro__text-author {
+  margin: 0;
+  position: absolute;
+  text-align: right;
+  top: 110px;
+  right: 2px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.intro__text-info {
+  margin: 32px 0 0 148px;
+  max-width: 56.25%;
+  max-height: 14.22%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  word-spacing: 2px;
+}
+
+.photo {
+  margin: auto;
+  /* max-width: 1184px; */
+  max-width: 100%;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 16px;
+  justify-content: center;
+  margin: 23px 0px 92px;
+  /* object-fit: cover; */
+}
+
+.places {
+  max-width: 77%;
+  margin: auto;
+  padding-bottom: 92px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title website"
+    ". paragraph"
+    "button paragraph"
+    ". paragraph";
+  column-gap: 40px;
+  row-gap: 48px;
+  margin-bottom: 80px;
+}
+
+/* .place:last-of-type {
+  margin-bottom: 0;
+} */
+
+.place__title {
+  grid-area: title;
+  /* font-family: Inter, Arial, sans-serif; */
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.1;
+  /* text-align: left; */
+  margin: auto;
+}
+
+/* .place__title_L {
+  width: 584px;
+} */
+
+.place__website {
+  grid-area: website;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+}
+
+.place__profession {
+  /* font-family: Inter, Arial, sans-serif; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: rgba(170, 170, 170, 1);
+  /* text-align: left; */
+}
+
+.place__artist {
+  /* font-family: Inter, Arial, sans-serif; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  /* text-align: left; */
+  margin: 0;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.place__image {
+  width: 100%;
+  /* max-width: 460px; */
+  /* object-fit: cover; */
+}
+
+.place__media-shop-button {
+  background-color: #0278fe;
+  /* height: 48px; */
+  padding: 13px 20px;
+  /* max-width: 355px; */
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.place__media-shop-button:hover {
+  background-color: #0063d2;
+}
+
+.place__media-shop-button:active {
+  background-color: #238aff;
+}
+
+/* .place__media-shop-button:hover {
+  opacity: 0.8;
+} */
+
+.place__paragraphs {
+  grid-area: paragraph;
+}
+
+.place__paragraph {
+  /* font-family: Inter, Arial, sans-serif; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  /* text-align: left; */
+  margin: 0 0 25px 0;
+  grid-column: 2/3;
+}
+
+/* @media screen and (max-width: 1279px) {
+  .place {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title website"
+      ". paragraph"
+      "button paragraph"
+      ". paragraph";
+    column-gap: 28px;
+    row-gap: 46px;
+    margin-bottom: 30px;
+  }
+
+  .place__title {
+    grid-area: title;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .place__title_large {
+    font-size: 42px;
+    width: 340px;
+  }
+
+  .place__website {
+    grid-area: website;
+  }
+
+  .place__paragraphs {
+    grid-area: paragraph;
+  }
+
+  .place__paragraph {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 0;
+    justify-content: center;
+  }
+
+  .place__title {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 288px;
+  }
+
+  .place__website {
+    width: 288px;
+    margin: auto;
+  }
+
+  .place__title_large {
+    width: 288px;
+  }
+
+  .place__image {
+    height: 100%;
+    margin: 30px 0 10px 0;
+  }
+
+  .place__paragraphs {
+    width: 288px;
+    margin: auto;
+  }
+} */
+
+/* .cover__about {
+  width: 92.5%;
+  height: 740px;
+  background: url(../images/__background.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cover__about-layout {
+  background-color: rgba(42, 44, 47, 0.3);
+  width: 100%;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.cover__about-layoutt:hover {
+  background-color: rgba(42, 44, 47, 0.8);
+}
+
+.cover__about-title {
+  width: 656px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+  margin: 243px 0 0;
+}
+
+.cover__about-text {
+  margin: 32px 0;
+}
+
+.footer__about-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.cover__about-tickets {
+  background-color: #0278fe;
+  height: 48px;
+  padding: 13px 20px;
+  max-width: 355px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cover__about-tickets:active {
+  background-color: #238aff;
+  border: 4px solid #238aff;
+}
+
+.cover__about-tickets:hover {
+  background-color: #0063d2;
+  border: 4px #0063d2 solid;
+}
+
+.footer__copy-right {
+  margin: 92px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+} */
+
+/* .cover__about:hover {
+  transition: background-color 0.5s, opacity 0.7s;
+  background-color: #0278fe;
+  opacity: 0.3;
+} */
+
+/* .cover__about-tickets:hover {
+  background-color: #0063d2;
+}
+
+.cover__about-tickets:active {
+  background-color: #238aff;
+} */
+
+/* .cover {
+  position: relative;
+  height: 740px;
+  max-width: 1184px;
+  width: 100%;
+}
+
+.cover__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+}
+
+.cover:hover .cover__overlay {
+  background-color: rgba(42, 44, 47, 0.5);
+  transition: background-color 0.6s, opacity 0.7s;
+}
+
+.cover__background {
+  position: absolute;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__infor {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 740px;
+}
+
+.cover__title {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.cover__subtitle {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 280px;
+  margin: 32px 0 0 0;
+}
+
+.cover__subtitle_address {
+  margin: 0;
+}
+
+.cover__subtitle_place {
+  margin: 0 0 32px 0;
+}
+
+.cover__about-tickets {
+  background-color: #0278fe;
+  height: 48px;
+  padding: 13px 20px;
+  max-width: 355px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cover__about-tickets:hover {
+  background-color: #0063d2;
+}
+
+.cover__about-tickets:active {
+  background-color: #238aff;
+}
+
+.footer__copyright {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: right;
+  margin: 92px 0 30px 0;
+} */
+
+.cover {
+  position: relative;
+  height: 740px;
+  max-width: 1184px;
+  width: 100%;
+}
+
+.cover__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cover:hover .cover__overlay {
+  background-color: rgba(42, 44, 47, 0.6);
+}
+
+.cover__background {
+  position: absolute;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__information {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 740px;
+}
+
+.cover__title {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.cover__subtitle {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 280px;
+  margin: 32px 0 0 0;
+}
+
+.cover__subtitle_address {
+  margin: 0;
+}
+
+.cover__subtitle_place {
+  margin: 0 0 32px 0;
+}
+
+.cover__about-tickets {
+  background-color: #0278fe;
+  /* height: 48px; */
+  padding: 13px 20px;
+  /* max-width: 355px; */
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cover__about-tickets:hover {
+  background-color: #0063d2;
+}
+
+/* .cover__about-tickets:active {
+  background-color: #238aff;
+} */
