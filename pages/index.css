@@ -353,10 +353,11 @@
 
 /* 320 */
 
+/* PLACES */
+
 .places {
   max-width: 77%;
   margin: auto;
-  /* padding-bottom: 92px; */
 }
 
 /* 768 */
@@ -368,7 +369,7 @@
   }
 }
 
-/* 3768 */
+/* 768 */
 
 /* 320 */
 
@@ -381,6 +382,8 @@
 }
 
 /* 320 */
+
+/* PLACE */
 
 .place {
   display: grid;
@@ -396,48 +399,32 @@
   margin-bottom: 80px;
 }
 
-/* .place:last-of-type {
-  margin-bottom: 0;
-} */
-
 .place__title {
   grid-area: title;
-  /* font-family: Inter, Arial, sans-serif; */
   font-size: 72px;
   font-weight: 900;
   line-height: 1.1;
-  /* text-align: left; */
   margin: auto;
 }
-
-/* .place__title_L {
-  width: 584px;
-} */
 
 .place__website {
   grid-area: website;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* justify-content: flex-start; */
-  /* align-items: center; */
 }
 
 .place__profession {
-  /* font-family: Inter, Arial, sans-serif; */
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1;
   color: rgba(170, 170, 170, 1);
-  /* text-align: left; */
 }
 
 .place__artist {
-  /* font-family: Inter, Arial, sans-serif; */
   font-size: 18px;
   font-weight: 400;
   line-height: 1.1;
-  /* text-align: left; */
   margin: 0;
   list-style: none;
   padding-left: 0px;
@@ -447,16 +434,23 @@
   width: 100%;
   height: 460px;
   object-fit: cover;
+}
 
-  /* max-width: 460px; */
-  /* object-fit: cover; */
+.place__paragraphs {
+  grid-area: paragraph;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+  grid-column: 2/3;
 }
 
 .place__media-shop-button {
   background-color: #0278fe;
-  /* height: 48px; */
   padding: 13px 20px;
-  /* max-width: 355px; */
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -474,25 +468,9 @@
   background-color: #238aff;
 }
 
-/* .place__media-shop-button:hover {
-  opacity: 0.8;
-} */
+/* 768 */
 
-.place__paragraphs {
-  grid-area: paragraph;
-}
-
-.place__paragraph {
-  /* font-family: Inter, Arial, sans-serif; */
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
-  /* text-align: left; */
-  margin: 0 0 25px 0;
-  grid-column: 2/3;
-}
-
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .place {
     display: grid;
     grid-template-columns: 340px 1fr;
@@ -504,26 +482,24 @@
       ". paragraph";
     column-gap: 28px;
     row-gap: 46px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .place__title {
     grid-area: title;
-    font-family: Inter, Arial, sans-serif;
     font-size: 42px;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  .place__title_large {
-    font-size: 42px;
-    width: 340px;
   }
 
   .place__website {
     grid-area: website;
+  }
+
+  .place__artist {
+    word-spacing: 5px;
+  }
+
+  .place__image {
+    height: 340px;
   }
 
   .place__paragraphs {
@@ -531,16 +507,22 @@
   }
 
   .place__paragraph {
-    font-family: Inter, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0em;
-    text-align: left;
+    word-spacing: 3px;
+    margin: 0 0 14px 0;
+  }
+
+  .place__media-shop-button {
+    width: max-content;
+    padding: 13px 15px;
   }
 }
 
-@media screen and (max-width: 767px) {
+/* 768 */
+
+/* 320 */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .place {
     width: 320px;
     display: flex;
@@ -580,286 +562,9 @@
   }
 }
 
-/* @media screen and (max-width: 1279px) {
-  .place {
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "title website"
-      ". paragraph"
-      "button paragraph"
-      ". paragraph";
-    column-gap: 28px;
-    row-gap: 46px;
-    margin-bottom: 30px;
-  }
+/* 320 */
 
-  .place__title {
-    grid-area: title;
-    font-family: Inter, Arial, sans-serif;
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  .place__title_large {
-    font-size: 42px;
-    width: 340px;
-  }
-
-  .place__website {
-    grid-area: website;
-  }
-
-  .place__paragraphs {
-    grid-area: paragraph;
-  }
-
-  .place__paragraph {
-    font-family: Inter, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .place {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    row-gap: 0;
-    justify-content: center;
-  }
-
-  .place__title {
-    font-family: Inter, Arial, sans-serif;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 288px;
-  }
-
-  .place__website {
-    width: 288px;
-    margin: auto;
-  }
-
-  .place__title_large {
-    width: 288px;
-  }
-
-  .place__image {
-    height: 100%;
-    margin: 30px 0 10px 0;
-  }
-
-  .place__paragraphs {
-    width: 288px;
-    margin: auto;
-  }
-} */
-
-/* .cover__about {
-  width: 92.5%;
-  height: 740px;
-  background: url(../images/__background.jpg);
-  background-size: cover;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.cover__about-layout {
-  background-color: rgba(42, 44, 47, 0.3);
-  width: 100%;
-  height: 740px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
-}
-
-.cover__about-layoutt:hover {
-  background-color: rgba(42, 44, 47, 0.8);
-}
-
-.cover__about-title {
-  width: 656px;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 1.05;
-  text-align: center;
-  margin: 243px 0 0;
-}
-
-.cover__about-text {
-  margin: 32px 0;
-}
-
-.footer__about-text {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.22;
-  margin: 0;
-}
-
-.cover__about-tickets {
-  background-color: #0278fe;
-  height: 48px;
-  padding: 13px 20px;
-  max-width: 355px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: normal;
-  color: #fff;
-  cursor: pointer;
-}
-
-.cover__about-tickets:active {
-  background-color: #238aff;
-  border: 4px solid #238aff;
-}
-
-.cover__about-tickets:hover {
-  background-color: #0063d2;
-  border: 4px #0063d2 solid;
-}
-
-.footer__copy-right {
-  margin: 92px 0 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.14;
-} */
-
-/* .cover__about:hover {
-  transition: background-color 0.5s, opacity 0.7s;
-  background-color: #0278fe;
-  opacity: 0.3;
-} */
-
-/* .cover__about-tickets:hover {
-  background-color: #0063d2;
-}
-
-.cover__about-tickets:active {
-  background-color: #238aff;
-} */
-
-/* .cover {
-  position: relative;
-  height: 740px;
-  max-width: 1184px;
-  width: 100%;
-}
-
-.cover__overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-size: cover;
-}
-
-.cover:hover .cover__overlay {
-  background-color: rgba(42, 44, 47, 0.5);
-  transition: background-color 0.6s, opacity 0.7s;
-}
-
-.cover__background {
-  position: absolute;
-  opacity: 70%;
-  width: 100%;
-  height: 100%;
-}
-
-.cover__infor {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 740px;
-}
-
-.cover__title {
-  font-family: Inter, Arial, sans-serif;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 76px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin: 0;
-}
-
-.cover__subtitle {
-  font-family: Inter, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-  width: 280px;
-  margin: 32px 0 0 0;
-}
-
-.cover__subtitle_address {
-  margin: 0;
-}
-
-.cover__subtitle_place {
-  margin: 0 0 32px 0;
-}
-
-.cover__about-tickets {
-  background-color: #0278fe;
-  height: 48px;
-  padding: 13px 20px;
-  max-width: 355px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: normal;
-  color: #fff;
-  cursor: pointer;
-}
-
-.cover__about-tickets:hover {
-  background-color: #0063d2;
-}
-
-.cover__about-tickets:active {
-  background-color: #238aff;
-}
-
-.footer__copyright {
-  font-family: Inter, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0em;
-  text-align: right;
-  margin: 92px 0 30px 0;
-} */
+/* COVER */
 
 .cover {
   position: relative;
