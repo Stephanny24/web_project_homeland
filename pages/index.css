@@ -500,6 +500,7 @@
 
   .place__image {
     height: 340px;
+    padding-bottom: 8px;
   }
 
   .place__paragraphs {
@@ -510,6 +511,7 @@
     font-size: 16px;
     word-spacing: 3px;
     margin: 0 0 14px 0;
+    margin-bottom: 11px;
   }
 
   .place__media-shop-button {
@@ -535,10 +537,7 @@
   .place__title {
     font-family: Inter, Arial, sans-serif;
     font-size: 32px;
-    font-weight: 900;
     line-height: 1.2;
-    letter-spacing: 0em;
-    text-align: left;
     width: 288px;
   }
 
@@ -547,18 +546,44 @@
     margin: auto;
   }
 
+  .place__profession {
+    padding-top: 30px;
+    margin-top: 0px;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+  }
+
+  .place__artist {
+    word-spacing: 6px;
+  }
+
   .place__title_large {
     width: 288px;
   }
 
   .place__image {
     height: 100%;
-    margin: 30px 0 10px 0;
+    margin: 25px 0 8px 0;
   }
 
   .place__paragraphs {
     width: 288px;
     margin: auto;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-bottom: 9px;
+  }
+
+  .place__media-shop-button {
+    max-width: 288px;
+    align-self: center;
+    padding: 13px 15px;
+    margin-left: 18px;
+    margin-bottom: 16px;
+    font-size: 14px;
   }
 }
 
@@ -632,9 +657,7 @@
 
 .cover__about-tickets {
   background-color: #0278fe;
-  /* height: 48px; */
   padding: 13px 20px;
-  /* max-width: 355px; */
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -648,48 +671,41 @@
   background-color: #0063d2;
 }
 
-/* .cover__about-tickets:active {
-  background-color: #238aff;
-} */
+/* 768 */
 
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .cover {
-    position: relative;
-    max-width: 720px;
+    max-width: 768px;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 767px) {
+/* 768 */
+
+/* 320 */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .cover {
-    position: relative;
     max-height: 254px;
     width: 321.26px;
   }
 
-  .cover__information {
+  .cover__info {
     max-height: 254px;
   }
 
   .cover__title {
-    font-family: Inter;
     font-size: 32px;
-    font-weight: 900;
     line-height: 1.5;
-    letter-spacing: 0em;
     text-align: center;
-    margin-top: 46px;
+    margin-top: 40px;
+    margin: 0;
   }
 
   .cover__subtitle {
-    font-family: Inter, Arial, sans-serif;
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 0em;
-    text-align: center;
     margin: 16px 0 0 0;
-    padding: 0;
   }
 
   .cover__subtitle_address {
@@ -699,10 +715,15 @@
   .cover__subtitle_place {
     margin: 0;
   }
+
+  .cover__about-tickets {
+    margin-top: 16px;
+  }
 }
 
+/* 320 */
+
 .footer__copy-right {
-  /* font-family: Inter, Arial, sans-serif; */
   margin: auto;
   font-size: 14px;
   font-weight: 400;
@@ -711,8 +732,20 @@
   margin: 92px 0 20px 0;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__copyright {
+/* 768 */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__copy-right {
+    margin: 88px 0 24px 0;
+  }
+}
+
+/* 768 */
+
+/* 320 */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__copy-right {
     margin: 64px 0 24px 0;
   }
 }
