@@ -20,6 +20,10 @@
   margin: auto;
 }
 
+.place__title_large {
+  width: 584px;
+}
+
 .place__website {
   grid-area: website;
   display: flex;
@@ -101,6 +105,11 @@
     font-size: 42px;
   }
 
+  .place__title_large {
+    font-size: 42px;
+    width: 340px;
+  }
+
   .place__website {
     grid-area: website;
   }
@@ -145,6 +154,10 @@
     font-family: Inter, Arial, sans-serif;
     font-size: 32px;
     line-height: 1.2;
+    width: 288px;
+  }
+
+  .place__title_large {
     width: 288px;
   }
 
